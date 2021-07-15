@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formular.css">
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@100&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+  </style>
+</head>
+<body>
+    <main>
+<center>
+        <h1 id="title">Clubul programatorilor amatori</h1>
+    <p><i>Comunitate destinata pregatirii si dezvoltarii noilor generatii de programatori</i></p>
+</center>
+
+    <form action="" id="survey-form">
+        <div class="container">
+        <label for="name" id="name-label">Nume</label> 
+          <input placeholder="e.g: Ciprian Barbu" type="text" id="name"> <br>
+      
+        <label for="email"  id="email-label">Email</label>
+          <input placeholder="e.g: barbu38@yahoo.com" type="email" name="" id="email"> <br>
+      
+        <label for="number" id="number-label">Varsta</label>
+          <input placeholder="e.g: 26" type="number" min="" name="" id="number"><br>
+         
+
+        <label for="rol">Alege pozitia curenta:</label>
+        <select name="rol" id="dropdown">
+            <option value="" disabled selected hidden>Alege o optiune</option>
+            <option value="student">Student</option>
+            <option value="part-time"> Angajat part-time</option>
+            <option value="full-time">Angajat full-time</option>
+            <option value="neangajat">Neangajat</option>
+          </select>
+    <br><br> 
+    <label for="">Ai recomanda acest concept unui prieten?</label>
+    
+    <div class="recomandare"> 
+     <input type="radio"  name="recomandare" value="Da">
+        <label for="Da">Da</label><br>
+      <input type="radio"  name="recomandare" value="Nu">
+        <label for="Nu">Nu</label><br>
+      <input type="radio" name="recomandare" value="Poate">
+        <label for="Poate">Poate</label><br><br>
+    </div>
+
+    <label for="">Ce domenii ai vrea sa experimentezi?</label>
+    <div class="domenii">
+    <input type="checkbox">
+        <label for="">Frontend</label><br>
+
+    <input type="checkbox">
+         <label for="">Backend</label><br>
+
+    <input type="checkbox">
+        <label for="">C/C++ Developer</label><br>
+
+    <input type="checkbox">
+        <label for="">Python Developer</label><br>
+ 
+    <input type="checkbox">
+          <label for="">Mobile Developer</label><br>
+    <input type="checkbox">
+        <label for="">UX/UI Designer</label><br>
+    <input type="checkbox">
+        <label for="">Java Developer</label><br>
+    </div><br><br>
+    <label for="">Nelamuriri, sugestii sau comentarii?</label><br>
+<textarea name="" id="" cols="30" rows="10">Introdu comentariul tau aici...</textarea>
+<br>
+<button type="submit" id="submit">Trimitere</button>
+</div>
+</form>
+</main>
+</body>
+</html>

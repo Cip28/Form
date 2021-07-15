@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+ font-family:'Quicksand', sans-serif;
+ background-color: #000000;
+ color:#E5E5E5;
+}
+
+h1{
+    padding: 30px;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#survey-form{
+    position: absolute;
+    left:50%;
+    transform:translate(-50%);
+    background-color: #14213D;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 40px;
+    width:55%;
+}
+
+.container{
+    padding:30px 40px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.recomandare, .domenii{
+    display: inline-block;
+}
+
+#name-label, #email-label, #number-label{
+    font-size:20px;
+    margin-bottom:10px ;
+}
+
+#name, #email, #number,#dropdown,#submit {
+    
+    padding:10px;
+    border-radius: 6px 6px 6px 6px;
+}
+button{
+    background-color:rgb(255, 157, 0);
+    width: 100%;
+    height: 40%;
+    font-family: 'Quicksand',sans-serif;
+}
+
+button:hover{
+    background-color: rgba(241,166,45,1);
+    cursor: pointer;
+}
