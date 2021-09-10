@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formular </title>
     <link rel="stylesheet" href="formular.css">
     <style>
        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@100&display=swap');
        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
   </style>
+  
+<script src="./form.js"></script>
 </head>
 <body>
     <main>
@@ -18,20 +20,20 @@
     <p><i>Comunitate destinata pregatirii si dezvoltarii noilor generatii de programatori</i></p>
 </center>
 
-    <form action="" id="survey-form">
+    <form action="" name="form1" id="survey-form" onsubmit="return validateForm()">
         <div class="container">
-        <label for="name" id="name-label">Nume</label> 
-          <input placeholder="e.g: Ciprian Barbu" type="text" id="name"> <br>
+        <label for="name"  id="name-label" >Nume*</label> 
+          <input placeholder="e.g: Ciprian Barbu" name="name" type="text" id="name" required> <br>
       
-        <label for="email"  id="email-label">Email</label>
-          <input placeholder="e.g: barbu38@yahoo.com" type="email" name="" id="email"> <br>
+        <label for="email"  id="email-label" >Email*</label>
+          <input placeholder="e.g: barbu38@yahoo.com" name="email" type="email" name="" id="email" required> <br>
       
-        <label for="number" id="number-label">Varsta</label>
-          <input placeholder="e.g: 26" type="number" min="" name="" id="number"><br>
+        <label for="number"  id="number-label" >Varsta*</label>
+          <input placeholder="e.g: 26" type="number" name="varsta" min="" name="" id="number" required><br>
          
 
-        <label for="rol">Alege pozitia curenta:</label>
-        <select name="rol" id="dropdown">
+        <label for="rol">Alege pozitia curenta:*</label><br>
+        <select name="rol" id="dropdown" required>
             <option value="" disabled selected hidden>Alege o optiune</option>
             <option value="student">Student</option>
             <option value="part-time"> Angajat part-time</option>
@@ -39,10 +41,10 @@
             <option value="neangajat">Neangajat</option>
           </select>
     <br><br> 
-    <label for="">Ai recomanda acest concept unui prieten?</label>
+    <label for="">Ai recomanda acest concept unui prieten?*</label>
     
-    <div class="recomandare"> 
-     <input type="radio"  name="recomandare" value="Da">
+    <div class="recomandare" > 
+     <input type="radio"  name="recomandare" value="Da" required>
         <label for="Da">Da</label><br>
       <input type="radio"  name="recomandare" value="Nu">
         <label for="Nu">Nu</label><br>
@@ -50,9 +52,9 @@
         <label for="Poate">Poate</label><br><br>
     </div>
 
-    <label for="">Ce domenii ai vrea sa experimentezi?</label>
+    <label for="">Ce domenii ai vrea sa experimentezi?*</label>
     <div class="domenii">
-    <input type="checkbox">
+    <input type="checkbox" required>
         <label for="">Frontend</label><br>
 
     <input type="checkbox">
@@ -78,5 +80,6 @@
 </div>
 </form>
 </main>
+
 </body>
 </html>
